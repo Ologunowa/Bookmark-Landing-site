@@ -1,0 +1,113 @@
+.last-content {
+    background-color: $soft-blue;
+    width: 100%;
+    bottom: 0;
+    padding: 2rem;
+    text-align: center;
+}
+
+.newsletter {
+    p,h2 {
+        color: #fff !important;
+    }
+    p {
+        text-transform: uppercase !important;
+       // text-indent: 2rem;
+       font-weight: lighter;
+       font-kerning: 200;
+    }
+
+    h2 {
+        font-size: 1.5rem !important;
+        //white-space: nowrap;
+    }
+}
+
+.newsletter form {
+    display: flex;
+    gap: 10px;
+    flex-flow: row nowrap;
+    //background-color: $soft-red;
+    border-radius: 5px;
+    padding: 20px 0;
+    text-align: center;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form input {
+    padding: 12px;
+    border-radius: 4px;
+}
+
+form input[type="email"] {
+    flex: 1;
+    font-size: 18px;
+    outline: none;
+    transition: .4s;
+    border: 1px solid transparent;
+}
+form input[type="email"]:focus {
+    border: 1px solid $soft-red;
+}
+form input[type="submit"] {
+    color: #fff;
+    outline: none;
+    padding: 0 15px;
+    border: 1px solid $soft-red;
+    background-color: $soft-red;
+    transition: all 0.5s ease-in-out;
+    font-size: 17px;
+    margin: 0 0 0 20px;
+    box-shadow: rgba(76, 117, 155, 0.323) 0px 8px 24px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #fff;
+    border: 1px solid $soft-red;
+    color: $soft-red;
+}
+
+.foot-list {
+    background-color: $very-dark-blue;
+}
+.foot {
+    background-color: $very-dark-blue;
+    display: flex;
+    padding: 1rem;
+    max-width: 80%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    .foot-menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5rem;
+
+        img {
+            background-color: #fff;
+            padding: 5px;
+            border-radius: 6px;
+        }
+
+        .menu-list {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            color: #fff;
+
+            span {
+                display: flex;
+                gap: 2rem;
+            }
+        }
+    }
+
+    .social {
+        display: flex;
+        gap: 2rem;
+    }
+}

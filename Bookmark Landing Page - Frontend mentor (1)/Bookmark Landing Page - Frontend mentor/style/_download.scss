@@ -1,0 +1,39 @@
+.add-to {
+    display: flex;
+    flex-direction: column;
+    //margin: 4rem 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top:  5rem;
+    gap: 4rem;
+
+    .line {
+        width: 100%;
+        height: 2px;
+        color: $grayish-blue;
+    }
+}
+
+.dwnld-btn {
+    background-color: #fff;
+    box-shadow: rgba(76, 117, 155, 0.323) 0px 8px 24px;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 2rem 4rem;
+    //margin: 0 2rem;
+}
+
+.dwnld-btn {
+    img {
+        padding-top: 5rem;
+    }
+
+    a {
+        margin-bottom: 3rem !important;
+    }
+
+    p {
+        margin: 2rem 0;
+    }
+}

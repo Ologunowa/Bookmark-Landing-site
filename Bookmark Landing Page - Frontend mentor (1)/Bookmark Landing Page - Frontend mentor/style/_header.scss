@@ -1,0 +1,56 @@
+
+
+.hero-body {
+    margin-top: 2rem !important;
+    position: relative;
+    //padding: 0 2rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.hero-body>* {
+    flex-basis: 100%;
+}
+
+.content {
+    text-align: center;
+    margin: 2rem 4rem;
+    max-width: 30rem;
+
+    h1 {
+        white-space: nowrap;
+    }
+
+    .get-it-on {
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        white-space: nowrap;
+    }
+}
+
+.img-content {
+    position: relative;
+    justify-content: end;
+
+}
+
+.img-content img {
+    max-width: 100%;
+}
+
+.round-rect {
+    margin-top: 5rem;
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    background-color: $soft-blue;
+    border-radius: 40% 0 0 40%;
+    ////////////////////////////
+    z-index: -20;
+    margin-top: -50%;
+    right: 0;
+}

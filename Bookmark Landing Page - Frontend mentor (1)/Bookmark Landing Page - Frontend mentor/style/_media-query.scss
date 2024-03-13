@@ -1,0 +1,199 @@
+@media screen and (max-width: 1080px) {
+    .menu {
+        //display: none;
+        background-color: $very-dark-blue-opa;
+        position: fixed;
+        top: 100px;
+        left: 100rem;
+        right: 0;
+        height: 100%;
+        bottom: 100%;
+        transition: all .5s ease-in-out;
+        z-index: 1000;
+    }
+    ul {
+        margin-top: 5rem;
+        flex-direction: column;
+        width: auto;
+        gap: 0 !important;
+        align-items: center;
+        text-transform: uppercase;
+        color: white;
+        transition: all .5s ease-in-out;
+    }
+    a {
+        padding: 2rem;
+    }
+    li {
+    padding: 2rem;
+    border-top: 1px solid blanchedalmond;
+    //width: 95%;
+    text-align: center;
+    transition: all .5s ease-in-out;
+    }
+
+    ul li a {
+        color: #fff;
+    }
+    .hamburger {
+        display: block !important;
+        transition: all .5s ease-in-out;
+    }
+    .logo {
+        padding-right: 3rem;
+    }
+
+    .logo-menu-hamburger :checked ~ .menu {
+        left: 0rem;
+        transition: all .5s ease-in-out;
+    }
+
+    .logo-menu-hamburger :checked ~ .hamburger .line:nth-child(1) {
+        transform: translateY(10px) rotate(225deg);
+    }
+
+    .logo-menu-hamburger :checked ~ .hamburger .line:nth-child(3) {
+        transform: translateY(-10px) rotate(-225deg);
+    }
+
+    .logo-menu-hamburger :checked ~ .hamburger .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    a:hover {
+        border: 2px solid #fff;
+        //color: $soft-red;
+        margin: 5px;
+    }
+
+    .tab-section .features-tab ul li{
+        border-top: 2px solid $grayish-blue !important;
+    }
+
+    form {
+        flex-direction: column !important;
+    }
+    form input {
+        padding: 14px !important;
+        margin: 0 !important;
+    }
+
+    .foot {
+        flex-direction: column;
+    }
+    .foot-menu {
+        flex-direction: column;
+        gap: 0 !important;
+    }
+    .menu-list {
+        flex-direction: column;
+        margin: 2rem;
+    }
+
+    .features .mgt {
+        display: none;
+    }
+
+    .contain-content {
+        flex-direction: column;
+    }
+
+    .tabs.li {
+        text-transform: lowercase !important;
+    }
+
+    .tab-text-content {
+        text-align: center;
+        margin-top: 9rem;
+
+        h2 {
+            white-space: nowrap;
+        }
+    }
+    h2 {
+        //white-space: nowrap;
+    }
+
+    .herosect .blue-rect-bg {
+        width: 80% !important;
+        height: 22% !important;
+    }
+   .hero-img img {
+        width: 115%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .hero-body {
+        position: relative;
+        align-items: center;
+        //padding: 0 2rem;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .content {
+        text-align: left;
+        margin-left: 2rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .get-it-on {
+        justify-content: start !important;
+    }
+
+    .row {
+        display: flex;
+    }
+
+    .round-rect {
+        margin-top: 7rem;
+        position: absolute;
+        width: 60%;
+        height: 70%;
+        background-color: $soft-blue;
+        border-radius: 40% 0 0 40%;
+        ////////////////////////////
+    }
+    .tab-section .features-tab ul {
+        flex-direction: row !important;
+
+        li {
+            padding: 2rem;
+            border-bottom: 2px solid #9194a1 !important;
+        }
+    }
+
+    .tab__content {
+        display: flex;
+        flex-direction: row !important;
+
+        .tab-text-content {
+            text-align: left;
+        }
+    
+        .hidden {
+            display: inline !important;
+        }
+    }
+    .tabs {
+        flex-direction: row;
+    }
+    .add-to {
+        display: flex;
+        flex-direction: row !important;
+    }
+    .add-to-firefox {
+        margin-top: 6rem !important;
+    }
+
+    .add-to-opera {
+        margin-top: 12rem !important;
+    }
+}
